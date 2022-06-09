@@ -14,5 +14,11 @@ pipeline {
       }
     }
 
+    stage('end') {
+      steps {
+        echo 'install done'
+      }
+    }
+
   }
 }
