@@ -7,9 +7,9 @@ pipeline {
       }
     }
 
-    stage('end') {
+    stage('build') {
       steps {
-        echo 'everything worked fine'
+        sh 'mvn clean test'
       }
     }
 
